@@ -1,6 +1,6 @@
 var http = require('http');
 var fs = require('fs');
-var router = require('./router');
+var router = require('./Router');
 var server = http.createServer(function(req, res) {
   router.route(req.url,res);
 });
